@@ -6,7 +6,7 @@ public class AppConfig {
 
     @Bean
     MessageService getMessageService() {
-        MessageService service = new SimpleMessageService(getRepository());
+        MessageService service = new SimpleMessageService();
         return service;
     }
 
